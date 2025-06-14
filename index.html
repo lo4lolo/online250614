@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 온라인 수업 콘텐츠 제작법</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+        }
+        /* 스크롤을 부드럽게 */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* 모바일 메뉴 애니메이션 */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold text-gray-900">
+                    <a href="#">콘텐츠 제작 가이드</a>
+                </div>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="#intro" class="text-gray-600 hover:text-blue-600 transition">서론</a>
+                    <a href="#ch1" class="text-gray-600 hover:text-blue-600 transition">1장</a>
+                    <a href="#ch2" class="text-gray-600 hover:text-blue-600 transition">2장</a>
+                    <a href="#ch3" class="text-gray-600 hover:text-blue-600 transition">3장</a>
+                    <a href="#ch4" class="text-gray-600 hover:text-blue-600 transition">4장</a>
+                    <a href="#conclusion" class="text-gray-600 hover:text-blue-600 transition">결론</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg absolute top-full left-0 w-full -translate-x-full">
+            <a href="#intro" class="block text-center py-3 px-4 text-sm text-gray-600 hover:bg-blue-50">서론</a>
+            <a href="#ch1" class="block text-center py-3 px-4 text-sm text-gray-600 hover:bg-blue-50">제1장: 학습 나침반</a>
+            <a href="#ch2" class="block text-center py-3 px-4 text-sm text-gray-600 hover:bg-blue-50">제2장: 교사의 나침반</a>
+            <a href="#ch3" class="block text-center py-3 px-4 text-sm text-gray-600 hover:bg-blue-50">제3장: 교실 설계</a>
+            <a href="#ch4" class="block text-center py-3 px-4 text-sm text-gray-600 hover:bg-blue-50">제4장: 콘텐츠 제작</a>
+            <a href="#conclusion" class="block text-center py-3 px-4 text-sm text-gray-600 hover:bg-blue-50">결론</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">직접 만들고 바로 적용!</h1>
+            <h2 class="text-4xl md:text-5xl font-bold text-blue-600 mb-6">나만의 온라인 수업 콘텐츠 제작법</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600">미래 준비 교육을 위한 교사 가이드: OECD 학습 나침반을 기반으로 Canva와 ZEP을 활용한 실천적 방법론</p>
+        </div>
+
+        <!-- Section: 서론 -->
+        <section id="intro" class="mb-16 scroll-mt-20">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">서론: 새로운 학습의 항로를 그리다</h2>
+                <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>인공지능(AI)의 급격한 발전, 디지털 전환, 그리고 예측 불가능성이 증대되는 시대의 한가운데에서, 우리는 교육의 근본적인 패러다임 전환을 마주하고 있습니다. 과거의 교육이 이미 알려진 지식을 효율적으로 전달하고 암기시키는 데 중점을 두었다면, 미래의 교육은 학생들이 미지의 영역을 스스로 탐험하고 길을 찾아갈 수 있는 역량을 길러주는 것을 목표로 합니다.</p>
+                    <p>본 연수의 핵심 비유는 <span class="font-semibold text-blue-600">'지도'에서 '나침반'</span>으로의 전환입니다. 학생들에게 정해진 경로가 그려진 지도를 쥐여주는 대신, 어떤 낯선 상황에서도 스스로 방향을 설정하고 나아갈 수 있는 나침반을 손에 쥐여주어야 한다는 것입니다. 궁극적으로 이 프로그램의 중심 철학은 '교사는 학습 경험의 설계자'라는 명제에 있습니다. 학생 주도성을 갖춘 학습자를 양성하기 위해서는, 먼저 교사가 교육과정의 수동적 실행자를 넘어 학습 경험의 능동적 설계자(Architect)로 거듭나야 합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Chapter 1 -->
+        <section id="ch1" class="mb-16 scroll-mt-20">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-2 text-gray-900">제1장: 교육의 새로운 북극성</h2>
+                <p class="text-xl text-gray-500 mb-6">OECD 학습 나침반 2030의 이해</p>
+                <div class="space-y-6 text-gray-700 leading-relaxed">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">1.1 지도를 넘어: 왜 나침반이 필요한가</h3>
+                        <p>OECD 학습 나침반 2030은 정해진 교육과정이나 평가의 틀이 아닙니다. 이는 교육 시스템이 우리가 원하는 미래, 즉 '개인과 공동체의 웰빙'이라는 목적지를 향해 나아갈 수 있도록 방향을 제시하는 열망에 찬 비전이자 공통의 언어입니다. 나침반이라는 비유는 학생들이 교사로부터 고정된 지시나 방향을 수동적으로 받는 대신, 예측 불가능하고 낯선 환경 속에서 스스로 길을 탐색하고 의미 있는 방향을 책임감 있게 찾아가는 능력을 길러야 한다는 점을 강조합니다.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">1.2 나침반의 심장: 학생 주도성과 공동 주체성</h3>
+                        <p>학습 나침반의 가장 핵심적인 개념은 '학생 주도성(Student Agency)'입니다. 이는 "목표를 설정하고, 성찰하며, 변화를 이끌어내기 위해 책임감 있게 행동하는 역량"으로 정의됩니다. 그러나 학생 주도성은 고립된 개인의 노력만으로 길러지지 않습니다. 프레임워크는 '공동 주체성(Co-agency)'이라는 개념을 통해 이 점을 명확히 합니다. 이는 학습자가 목표를 향해 나아갈 때 동료, 교사, 가족, 지역사회와 맺는 상호작용적이고 지지적인 관계를 의미합니다.</p>
+                    </div>
+                    <!-- Table 1 -->
+                    <div class="overflow-x-auto">
+                        <h4 class="font-bold my-4 text-center">표 1: OECD 학습 나침반 2030 핵심 구성 요소</h4>
+                        <table class="w-full min-w-max text-sm text-left text-gray-500">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-100 rounded-t-lg">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 rounded-tl-lg">구성 요소 (Component)</th>
+                                    <th scope="col" class="px-6 py-3 rounded-tr-lg">설명 (Description)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b"><td class="px-6 py-4 font-medium text-gray-900">목표 (Destination)</td><td class="px-6 py-4">개인과 사회의 웰빙 (Individual & Collective Well-being)</td></tr>
+                                <tr class="bg-gray-50 border-b"><td class="px-6 py-4 font-medium text-gray-900">핵심 개념 (Core Concept)</td><td class="px-6 py-4">학생 주도성 및 공동 주체성 (Student Agency & Co-Agency)</td></tr>
+                                <tr class="bg-white border-b"><td class="px-6 py-4 font-medium text-gray-900">변혁적 역량</td><td class="px-6 py-4">새로운 가치 창출, 긴장과 딜레마 조정, 책임감 갖기</td></tr>
+                                <tr class="bg-gray-50 border-b"><td class="px-6 py-4 font-medium text-gray-900">학습 과정</td><td class="px-6 py-4">예견-행동-성찰 순환 (Anticipation-Action-Reflection Cycle)</td></tr>
+                                <tr class="bg-white"><td class="px-6 py-4 font-medium text-gray-900 rounded-bl-lg">핵심 기초</td><td class="px-6 py-4">문해력, 수리력, 디지털 및 데이터 리터러시, 건강, 사회·정서적 기술</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Chapter 2 -->
+        <section id="ch2" class="mb-16 scroll-mt-20">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-2 text-gray-900">제2장: 교사의 나침반</h2>
+                <p class="text-xl text-gray-500 mb-6">미래 준비 학습을 위한 교사 역량 강화</p>
+                <div class="space-y-6 text-gray-700 leading-relaxed">
+                    <p>학습 나침반이 제시하는 원대한 비전은 교사 자신이 먼저 역량을 갖추고 주도성을 발휘할 때 비로소 현실이 될 수 있습니다. 교수 나침반의 핵심 비전은 교사를 '학습의 공동 설계자, 적응적 전문가, 변화의 주도자'로 재정의하는 것입니다. 학생의 주도성을 키우기 위해서는 교사에게 먼저 자율성과 전문성을 부여해야 합니다.</p>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg text-blue-800 mb-2">교사 주도성</h4>
+                            <p class="text-sm text-blue-700">변화를 주도할 수 있는 역량과 자율성</p>
+                        </div>
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg text-green-800 mb-2">교사 역량</h4>
+                            <p class="text-sm text-green-700">디지털 리터러시, 협력적 사고방식 등</p>
+                        </div>
+                        <div class="bg-yellow-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg text-yellow-800 mb-2">교사 웰빙</h4>
+                            <p class="text-sm text-yellow-700">지속 가능한 교육을 위한 필수 요소</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section: Chapter 3 -->
+        <section id="ch3" class="mb-16 scroll-mt-20">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-2 text-gray-900">제3장: 나침반 기반 교실 설계</h2>
+                <p class="text-xl text-gray-500 mb-6">온라인 콘텐츠를 위한 실천적 모델</p>
+                <div class="space-y-6 text-gray-700 leading-relaxed">
+                    <p>이론과 실제를 연결하여 OECD 프레임워크에서 제시된 역량들을 자연스럽게 함양할 수 있는 학습 환경을 설계합니다. 특히 학생 주도성과 변혁적 역량을 개발하는 데 효과적인 <span class="font-semibold text-blue-600">플립 러닝(Flipped Learning)</span>과 <span class="font-semibold text-green-600">프로젝트 기반 학습(Project-Based Learning, PBL)</span>에 초점을 맞춥니다.</p>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">3.2 플립 러닝</h3>
+                        <p>교사의 직접적인 강의가 온라인 콘텐츠를 활용한 개인 학습 공간으로 이동하고, 비워진 교실 시간을 토론, 문제 해결 등 상호작용적인 학습으로 채우는 모델입니다. 학생들은 자신의 속도에 맞춰 학습하며 책임감을 기르고, 교사는 학습 촉진자(Facilitator)가 되어 개별화된 피드백을 제공할 수 있습니다.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">3.3 프로젝트 기반 학습(PBL)</h3>
+                        <p>학생들이 현실적이고 복잡한 질문이나 문제에 대해 탐구하고 대응하는 과정을 통해 지식과 기술을 습득하는 역동적인 교수법입니다. 학생들은 프로젝트를 통해 새로운 가치를 창출하고, 긴장과 딜레마를 조정하며, 책임감을 갖는 등 변혁적 역량을 직접적으로 함양하게 됩니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section: Chapter 4 -->
+        <section id="ch4" class="mb-16 scroll-mt-20">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                 <h2 class="text-3xl font-bold mb-2 text-gray-900">제4장: 창작자의 도구함</h2>
+                <p class="text-xl text-gray-500 mb-6">Canva와 ZEP으로 콘텐츠 제작하기</p>
+                <div class="space-y-8 text-gray-700 leading-relaxed">
+                    <!-- Table 3 -->
+                    <div class="overflow-x-auto">
+                        <h4 class="font-bold my-4 text-center">표 3: Canva와 ZEP을 활용한 미래 준비 교실을 위한 디지털 도구함</h4>
+                        <table class="w-full min-w-max text-sm text-left text-gray-500">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 rounded-tl-lg">교육 목표</th>
+                                    <th scope="col" class="px-6 py-3">추천 모델</th>
+                                    <th scope="col" class="px-6 py-3">추천 도구</th>
+                                    <th scope="col" class="px-6 py-3 rounded-tr-lg">주요 기능</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b"><td class="px-6 py-4 font-medium text-gray-900">핵심 개념 전달</td><td class="px-6 py-4">플립 러닝</td><td class="px-6 py-4">Canva</td><td class="px-6 py-4">프레젠테이션 녹화, 동영상 편집</td></tr>
+                                <tr class="bg-gray-50 border-b"><td class="px-6 py-4 font-medium text-gray-900">이해도 확인</td><td class="px-6 py-4">플립 러닝, PBL</td><td class="px-6 py-4">ZEP, Canva</td><td class="px-6 py-4">퀴즈/OX/투표, 워크시트 제작</td></tr>
+                                <tr class="bg-white border-b"><td class="px-6 py-4 font-medium text-gray-900">협력적 아이디어 구상</td><td class="px-6 py-4">PBL, 플립 러닝</td><td class="px-6 py-4">Canva</td><td class="px-6 py-4">화이트보드, 마인드맵 템플릿</td></tr>
+                                <tr class="bg-gray-50"><td class="px-6 py-4 font-medium text-gray-900 rounded-bl-lg">결과물 전시/공유</td><td class="px-6 py-4">PBL</td><td class="px-6 py-4">Canva</td><td class="px-6 py-4 rounded-br-lg">포스터, 인포그래픽, 포트폴리오</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Canva -->
+                    <div class="p-6 border border-purple-200 rounded-lg bg-purple-50">
+                        <h3 class="text-2xl font-semibold mb-3 text-purple-800">4.1 올인원 디자인 허브: Canva</h3>
+                        <p>Canva는 동영상, 프레젠테이션, 워크시트, 포스터, 협업용 화이트보드까지, 수업에 필요한 거의 모든 시각 자료를 하나의 플랫폼에서 해결할 수 있는 강력한 웹 기반 디자인 도구입니다. 직관적인 인터페이스와 수많은 교육용 템플릿으로 교사도 손쉽게 전문가 수준의 결과물을 만들 수 있습니다.</p>
+                        <ul class="list-disc list-inside mt-4 space-y-2 text-purple-700">
+                            <li><span class="font-semibold">동영상 강의 제작:</span> 프레젠테이션 녹화 기능으로 손쉽게 플립 러닝용 영상을 제작하고 공유할 수 있습니다.</li>
+                            <li><span class="font-semibold">디지털 화이트보드:</span> 실시간 협업 기능으로 학생들과 브레인스토밍, 아이디어 정리 활동을 진행할 수 있습니다.</li>
+                        </ul>
+                    </div>
+
+                    <!-- ZEP -->
+                     <div class="p-6 border border-teal-200 rounded-lg bg-teal-50">
+                        <h3 class="text-2xl font-semibold mb-3 text-teal-800">4.2 메타버스에서의 즐거운 학습: ZEP</h3>
+                        <p>ZEP은 메타버스 공간에서 학생들이 자신의 아바타로 참여하는 게임형 학습 활동을 제공하여, 기존의 퀴즈 앱보다 훨씬 높은 몰입감과 재미를 선사합니다. 특히 형성평가나 학습 내용 복습을 지루하지 않고 역동적인 활동으로 전환시키는 데 매우 효과적입니다.</p>
+                         <ul class="list-disc list-inside mt-4 space-y-2 text-teal-700">
+                            <li><span class="font-semibold">게임형 퀴즈:</span> '퀴즈퀴즈', 'OX 퀴즈' 앱을 활용하여 재미있는 복습 게임이나 형성평가를 진행할 수 있습니다.</li>
+                            <li><span class="font-semibold">높은 몰입감:</span> 학생들이 아바타를 직접 조작하여 정답 존으로 이동하는 방식은 학습 동기가 낮은 학생들의 참여를 유도하는 데 탁월합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Conclusion -->
+        <section id="conclusion" class="mb-16 scroll-mt-20">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">결론: 함께 항해하는 미래</h2>
+                <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>본 연수 프로그램은 OECD 학습 나침반과 교수 나침반이 제시하는 교육의 새로운 비전을 탐색하는 여정이었습니다. 미래 교육은 지식의 암기를 넘어 학생들의 웰빙과 주도성 함양을 목표로 해야 하며, 이는 더 이상 추상적인 이상이 아니라, 구체적인 교수 모델과 <span class="font-semibold text-purple-600">Canva</span>, <span class="font-semibold text-teal-600">ZEP</span>과 같은 강력하고 접근성 높은 디지털 도구를 통해 우리 교실에서 실현 가능한 목표입니다.</p>
+                    <p>변화의 중심에는 바로 교사가 있습니다. 이제 작은 실천을 시작할 때입니다. Canva로 첫 동영상 강의를 만들어보고, ZEP으로 신나는 복습 퀴즈를 진행해 보십시오. 동료 교사들과 경험을 공유하고, 학생들의 목소리에 귀 기울이며 함께 성장해 나가기를 바랍니다. 이 길은 혼자 가는 길이 아니라, 공동의 목적의식을 가지고 함께 나아가는 여정입니다.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 하는교사.com All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">본 자료는 교육적 목적으로 제작되었습니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-0');
+            mobileMenu.classList.toggle('-translate-x-full');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('-translate-x-full');
+            });
+        }
+    </script>
+</body>
+</html>
